@@ -23,17 +23,17 @@ const Clients = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 items-center max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
           {clients.map((client, index) => (
             <div
               key={index}
-              className="flex items-center justify-center p-4 md:p-6 grayscale hover:grayscale-0 transition-all duration-300 animate-fade-in"
+              className="flex items-center justify-center p-6 md:p-8 grayscale hover:grayscale-0 transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <img
                 src={client.logo}
                 alt={client.name}
-                className="w-full h-auto max-h-20 md:max-h-28 lg:max-h-32 object-contain opacity-70 hover:opacity-100 transition-opacity"
+                className="w-full h-auto max-h-32 md:max-h-40 lg:max-h-48 object-contain opacity-90 hover:opacity-100 transition-opacity"
               />
             </div>
           ))}
