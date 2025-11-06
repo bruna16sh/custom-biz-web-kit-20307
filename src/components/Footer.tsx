@@ -1,4 +1,4 @@
-import logo from "@/assets/logo-cd-consult.png";
+import logo from "@/assets/logo-cd-consult-new.png";
 import { Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div className="sm:col-span-2">
-            <img src={logo} alt="CD Consult" className="h-10 md:h-12 w-auto mb-4" />
+            <img src={logo} alt="CD Consult" className="h-14 md:h-16 lg:h-20 w-auto mb-4" />
             <p className="text-sm text-muted-foreground max-w-md">
               Consultoria especializada em Audiovisual e Comunicação Unificada, 
               transformando tecnologia em resultados para empresas no Brasil e América Latina.
