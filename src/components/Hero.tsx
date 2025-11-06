@@ -23,8 +23,12 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10 py-20 md:py-32">
         <div className="max-w-4xl animate-fade-in">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-            A COMUNICAÇÃO DA SUA EMPRESA ACELERA OU TRAVA RESULTADOS?
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
+            <span className="block text-white/90 mb-2">A COMUNICAÇÃO DA SUA EMPRESA</span>
+            <span className="block bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent drop-shadow-[0_2px_20px_rgba(174,30,34,0.5)]">
+              ACELERA OU TRAVA
+            </span>
+            <span className="block text-white/90">RESULTADOS?</span>
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-8 leading-relaxed">
             Somos especialistas em AV e Comunicação Integrada. Atuamos como consultoria independente, 
