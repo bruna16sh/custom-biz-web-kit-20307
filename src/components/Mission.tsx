@@ -10,7 +10,7 @@ const Mission = () => {
               Nossa Missão
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-4 md:mb-6 leading-relaxed">
-              Orientamos organizações na tomada de decisão tecnológica dos seus ambientes com estratégia, 
+              Orientamos organizações na tomada de decisão sobre tecnologia audiovisual em seus ambientes com estratégia, 
               planejamento e visão de futuro, garantindo qualidade, produtividade, otimização de recursos, 
               e o melhor retorno sobre o investimento.
             </p>
@@ -18,7 +18,7 @@ const Mission = () => {
               AV & UC Technologies
             </h3>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              Contamos com uma equipe de profissionais com experiência internacional na indústria AV e UC, 
+              Somos uma equipe de profissionais com experiência internacional na indústria AV e UC, 
               incluindo especialistas em acústica, iluminação, BMS, infraestrutura e redes.
             </p>
           </div>

@@ -6,6 +6,7 @@ import Stats from "@/components/Stats";
 import Solutions from "@/components/Solutions";
 import Founder from "@/components/Founder";
 import Clients from "@/components/Clients";
+import Diagnosis from "@/components/Diagnosis";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -38,6 +39,7 @@ const Index = () => {
         <Solutions />
         <Founder />
         <Clients />
+        <Diagnosis />
         <Contact />
         <Footer />
       </main>

@@ -34,15 +34,9 @@ const Hero = () => {
             Somos especialistas em AV e Comunicação Integrada. Atuamos como consultoria independente, 
             ajudando empresas e instituições de ensino a transformarem tecnologia em desempenho eficaz.
           </p>
-          <Button
-            onClick={scrollToContact}
-            size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground text-base md:text-lg px-6 md:px-8 py-4 md:py-6 h-auto w-full sm:w-auto"
-          >
-            Agendar diagnóstico com nossos especialistas
-          </Button>
         </div>
       </div>
+      <div className="mouse-indicator"></div>
     </section>
   );
 };

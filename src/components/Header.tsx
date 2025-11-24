@@ -33,37 +33,37 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center">
-          <img src={logo} alt="CD Consult" className="h-20 md:h-24 lg:h-28 w-auto" />
+          <img src={logo} alt="CD Consult" className="h-12 md:h-14 lg:h-16 w-auto" />
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
           <button
             onClick={() => scrollToSection("inicio")}
-            className="text-sm font-medium hover:text-primary transition-smooth"
+            className={`text-sm font-medium transition-smooth ${isScrolled ? "text-black hover:text-primary" : "text-white hover:text-primary"}`}
           >
             Início
           </button>
           <button
             onClick={() => scrollToSection("sobre")}
-            className="text-sm font-medium hover:text-primary transition-smooth"
+            className={`text-sm font-medium transition-smooth ${isScrolled ? "text-black hover:text-primary" : "text-white hover:text-primary"}`}
           >
             Sobre Nós
           </button>
           <button
             onClick={() => scrollToSection("solucoes")}
-            className="text-sm font-medium hover:text-primary transition-smooth"
+            className={`text-sm font-medium transition-smooth ${isScrolled ? "text-black hover:text-primary" : "text-white hover:text-primary"}`}
           >
             Soluções
           </button>
           <button
             onClick={() => scrollToSection("clientes")}
-            className="text-sm font-medium hover:text-primary transition-smooth"
+            className={`text-sm font-medium transition-smooth ${isScrolled ? "text-black hover:text-primary" : "text-white hover:text-primary"}`}
           >
             Clientes
           </button>
           <button
             onClick={() => scrollToSection("contato")}
-            className="text-sm font-medium hover:text-primary transition-smooth"
+            className={`text-sm font-medium transition-smooth ${isScrolled ? "text-black hover:text-primary" : "text-white hover:text-primary"}`}
           >
             Contato
           </button>
@@ -86,34 +86,39 @@ const Header = () => {
             <nav className="flex flex-col gap-6 mt-8">
               <button
                 onClick={() => scrollToSection("inicio")}
-                className="text-left text-lg font-medium hover:text-primary transition-smooth"
+                className="text-left text-lg font-medium text-black hover:text-primary transition-smooth"
               >
                 Início
               </button>
+
               <button
                 onClick={() => scrollToSection("sobre")}
-                className="text-left text-lg font-medium hover:text-primary transition-smooth"
+                className="text-left text-lg font-medium text-black hover:text-primary transition-smooth"
               >
                 Sobre Nós
               </button>
+
               <button
                 onClick={() => scrollToSection("solucoes")}
-                className="text-left text-lg font-medium hover:text-primary transition-smooth"
+                className="text-left text-lg font-medium text-black hover:text-primary transition-smooth"
               >
                 Soluções
               </button>
+
               <button
                 onClick={() => scrollToSection("clientes")}
-                className="text-left text-lg font-medium hover:text-primary transition-smooth"
+                className="text-left text-lg font-medium text-black hover:text-primary transition-smooth"
               >
                 Clientes
               </button>
+
               <button
                 onClick={() => scrollToSection("contato")}
-                className="text-left text-lg font-medium hover:text-primary transition-smooth"
+                className="text-left text-lg font-medium text-black hover:text-primary transition-smooth"
               >
                 Contato
               </button>
+
               <Button
                 onClick={() => scrollToSection("contato")}
                 className="bg-primary hover:bg-primary/90 text-primary-foreground w-full mt-4"

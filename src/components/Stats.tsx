@@ -23,11 +23,10 @@ const Stats = () => {
   }, []);
 
   const stats = [
-    { icon: Users, value: 800, label: "Clientes Atendidos", prefix: "+" },
-    { icon: Briefcase, value: 600, label: "Projetos Desenvolvidos", prefix: "+" },
-    { icon: Award, value: 10, label: "Anos de Experiência", prefix: "+" },
-    { icon: TrendingUp, value: 98, label: "Satisfação dos Clientes", suffix: "%" },
-    { icon: Globe, value: 6, label: "Países em que Atuamos", prefix: "" },
+    { icon: Users, value: 200, label: "Clientes Atendidos", prefix: "+" },
+    { icon: Briefcase, value: 60, label: "Projetos Desenvolvidos", prefix: "+" },
+    { icon: Award, value: 40, label: "Anos de Mercado", prefix: "+" },
+    { icon: Globe, value: 2, label: "Países em que Atuamos", prefix: "" },
   ];
 
   const Counter = ({ end, duration = 2000, prefix = "", suffix = "" }: { end: number; duration?: number; prefix?: string; suffix?: string }) => {
@@ -70,7 +69,7 @@ const Stats = () => {
           Números que demonstram nossa expertise e comprometimento com a excelência
         </p>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 md:gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
@@ -79,7 +78,7 @@ const Stats = () => {
             >
               <stat.icon className="w-10 h-10 md:w-12 md:h-12 mb-3 md:mb-4 text-primary" />
               <div className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2">
-                <Counter end={stat.value} prefix={stat.prefix} suffix={stat.suffix} />
+                <Counter end={stat.value} prefix={stat.prefix} />
               </div>
               <div className="text-xs md:text-sm lg:text-base text-muted-foreground px-2">{stat.label}</div>
             </div>

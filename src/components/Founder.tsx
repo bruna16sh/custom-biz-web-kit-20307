@@ -34,9 +34,12 @@ const Founder = () => {
               Carlos Dalmarco
             </h3>
             <p className="text-base md:text-lg text-muted-foreground mb-6 md:mb-8 leading-relaxed">
-              Fundador da CD Consult, com mais de uma década de experiência em consultoria 
-              de Audiovisual e Comunicação Unificada. Formação internacional pelas mais 
-              prestigiadas instituições e certificações reconhecidas globalmente na indústria AV.
+              Fundador da CD Consult, com mais de uma década de experiência em consultoria de Audiovisual 
+              e Comunicação Unificada. Atua com clientes corporativos e educacionais em todo o Brasil e 
+              América Latina, oferecendo projetos, diagnósticos e estratégias em AV e UC. Possui formação 
+              internacional pelas instituições mais prestigiadas do setor e certificações reconhecidas
+              globalmente na indústria audiovisual. Além disso, atua como palestrante, articulista, 
+              membro da AVIXA e embaixador da SAVe.
             </p>
 
             <div className="mb-6 md:mb-8">

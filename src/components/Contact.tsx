@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MessageCircle  } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -10,6 +10,7 @@ const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
+    company: "",
     email: "",
     phone: "",
     message: "",
@@ -21,7 +22,7 @@ const Contact = () => {
       title: "Mensagem enviada!",
       description: "Entraremos em contato em breve.",
     });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setFormData({ name: "", company: "",email: "", phone: "", message: "" });
   };
 
   return (
@@ -29,7 +30,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
-            Agendar diagnóstico com nossos especialistas
+            Agendar diagnóstico
           </h2>
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto">
             Transforme a comunicação da sua empresa em vantagem competitiva
@@ -49,6 +50,20 @@ const Contact = () => {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Seu nome"
+                    required
+                    className="h-11 md:h-12"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="company" className="block text-sm font-medium mb-2">
+                    Nome da Empresa
+                  </label>
+                  <Input
+                    id="company"
+                    value={formData.company}
+                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                    placeholder="Nome da empresa"
                     required
                     className="h-11 md:h-12"
                   />
@@ -129,26 +144,14 @@ const Contact = () => {
 
             <Card>
               <CardContent className="p-4 md:p-6 flex items-start gap-3 md:gap-4">
-                <MapPin className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-1" />
+                <MessageCircle className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-bold mb-1 text-sm md:text-base">Localização</h3>
-                  <p className="text-sm md:text-base text-muted-foreground">
-                    Brasil e América Latina<br />
-                    Atendimento em 6 países
-                  </p>
+                  <h3 className="font-bold mb-1 text-sm md:text-base">Whatsapp</h3>
+                  <p className="text-sm md:text-base text-muted-foreground">+55 (11) 99999-9999</p>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="bg-accent text-accent-foreground">
-              <CardContent className="p-4 md:p-6">
-                <h3 className="font-bold text-base md:text-lg mb-2">Horário de Atendimento</h3>
-                <p className="text-xs md:text-sm opacity-90">
-                  Segunda a Sexta: 9h às 18h<br />
-                  Sábado: 9h às 13h
-                </p>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
