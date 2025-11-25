@@ -27,17 +27,22 @@ const Diagnosis = () => {
             <Card className="">
               <CardContent className="p-6 md:p-8 lg:p-10">
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
-                  O investimento em tecnologia AV-UC costuma representar uma parte relevante do 
-                  orçamento em projetos corporativos ou educacionais. Apesar disso, essa tecnologia 
-                  deve ser transparente aos usuários, funcionando como uma ferramenta de comunicação 
-                  — e não como uma barreira.
+                  Antes de decidir investimentos, equipamentos ou padrões tecnológicos, existe um passo 
+                  fundamental: entender o que realmente importa para o seu espaço, para sua operação e 
+                  para as pessoas que vão utilizar a solução. É exatamente aqui que começamos.
+                </p>
+                <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
+                  Projetos de tecnologia AV-UC costumam representar uma parcela relevante do orçamento, 
+                  mas, na prática, tudo deveria ser simples, fluido e transparente para os usuários. 
+                  Quando isso não acontece, surgem frustrações, retrabalhos e decisões caras que 
+                  poderiam ter sido evitadas.
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-                  Quando o resultado não atende às expectativas, surgem frustrações e insatisfações 
-                  entre os stakeholders. Por isso, a avaliação correta de Necessidades e Desejos é 
-                  essencial. Ela é o ponto de partida para um projeto de Áudio, Vídeo e Comunicação 
-                  Unificada que realmente integre Arquitetura, Recursos Tecnológicos e Objetivos do 
-                  Cliente, garantindo uma experiência eficiente e alinhada ao propósito de cada espaço.
+                  Nosso Diagnóstico de Necessidades e Desejos existe para evitar esse cenário. Ele é o 
+                  ponto de partida para quem quer clareza antes de investir — uma conversa estruturada 
+                  que revela oportunidades, riscos e prioridades, ajudando você a visualizar o que pode 
+                  ser construído a partir daqui. Muitas vezes, é nesse primeiro diálogo que a solução 
+                  certa começa a aparecer.
                 </p>
               </CardContent>
             </Card>
@@ -49,8 +54,8 @@ const Diagnosis = () => {
               Nossas Premissas de Projeto
             </h2>
             <p className="text-base md:text-lg text-muted-foreground text-center mb-10 max-w-3xl mx-auto">
-              Para garantir soluções eficientes, sustentáveis e alinhadas ao futuro, nossos projetos 
-              seguem princípios que norteiam todas as etapas de desenvolvimento e entrega.
+              Cada projeto nasce a partir desse diagnóstico inicial e segue princípios que garantem 
+              eficiência, durabilidade e alinhamento ao futuro:
             </p>
 
             <div className="grid md:grid-cols-2 gap-4 md:gap-6">
@@ -65,8 +70,13 @@ const Diagnosis = () => {
                     <p className="text-sm md:text-base font-medium">{premise}</p>
                   </CardContent>
                 </Card>
+                
               ))}
             </div>
+            <p className="text-base md:text-lg text-muted-foreground text-center mb-10 max-w-3xl mx-auto">
+              Se você quer entender por onde começar ou explorar o que é possível construir no seu projeto, 
+              uma conversa inicial já traz muita clareza — e pode definir todo o caminho daqui pra frente.
+            </p>
           </div>
         </div>
       </div>
