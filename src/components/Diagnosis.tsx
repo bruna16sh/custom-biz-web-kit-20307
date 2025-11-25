@@ -73,10 +73,12 @@ const Diagnosis = () => {
                 
               ))}
             </div>
-            <p className="text-base md:text-lg text-muted-foreground text-center mb-10 max-w-3xl mx-auto">
+            <div>
+              <p className="text-base md:text-lg text-muted-foreground text-center mb-10 max-w-3xl mx-auto">
               Se você quer entender por onde começar ou explorar o que é possível construir no seu projeto, 
               uma conversa inicial já traz muita clareza — e pode definir todo o caminho daqui pra frente.
             </p>
+            </div>
           </div>
         </div>
       </div>
