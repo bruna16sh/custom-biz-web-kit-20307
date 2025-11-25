@@ -36,7 +36,7 @@ const Contact = () => {
             Transforme a comunicação da sua empresa em vantagem competitiva
           </p>
         </div>
-
+ 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
           <Card className="animate-slide-in-left">
             <CardContent className="p-6 md:p-8">
