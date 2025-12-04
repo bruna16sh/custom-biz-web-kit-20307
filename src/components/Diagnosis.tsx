@@ -39,7 +39,7 @@ const Diagnosis = () => {
                 </p>
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   Nosso Diagnóstico de Necessidades e Desejos existe para evitar esse cenário. Ele é o 
-                  ponto de partida para quem quer clareza antes de investir — uma conversa estruturada 
+                  ponto de partida para quem quer clareza antes de investir, além de ser uma conversa estruturada 
                   que revela oportunidades, riscos e prioridades, ajudando você a visualizar o que pode 
                   ser construído a partir daqui. Muitas vezes, é nesse primeiro diálogo que a solução 
                   certa começa a aparecer.
